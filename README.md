@@ -1,8 +1,8 @@
 # Low-Emission Aircraft Trajectory Analysis
 
-A Python-based trajectory analysis project examining how hydrogen fuel cell 
-aircraft differ from conventional A320 aircraft on European short-haul routes, 
-and what the implications are for mixed-fleet airspace capacity.
+Exploratory trajectory analysis comparing conventional A320 and hydrogen fuel 
+cell aircraft on European short-haul routes, with mixed-fleet ATM capacity 
+implications.
 
 ## Research question
 
@@ -87,6 +87,8 @@ ZEUS (Horizon Europe) addresses at the system level.
 
 ## Requirements
 
-```
-pip install openap matplotlib pandas numpy
-```
+See `requirements.txt`. Install with:
+
+\```
+pip install -r requirements.txt
+\```

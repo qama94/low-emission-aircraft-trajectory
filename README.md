@@ -53,6 +53,14 @@ Climb sector occupancy modelled across hydrogen fleet penetration scenarios
 | Extra sector occupancy at 50% penetration | 29.4 min/day |
 | Climb sector capacity impact at 100% penetration | +5.3% |
 
+## Figures
+
+![A320 conventional baseline trajectory](figures/01_baseline_trajectory.png)
+
+![A320 conventional vs hydrogen fuel cell trajectory comparison](figures/02_trajectory_comparison.png)
+
+![Mixed-fleet capacity implications Amsterdam-London corridor](figures/03_mixed_fleet_capacity.png)
+
 ## Limitations and future work
 
 - Kinematic parameters are held constant from conventional A320 WRAP model — 

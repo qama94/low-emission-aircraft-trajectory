@@ -87,8 +87,8 @@ ZEUS (Horizon Europe) addresses at the system level.
 
 ## Requirements
 
-See `requirements.txt`. Install with:
+Install dependencies:
 
-\```
-pip install -r requirements.txt
-\```
+```bash
+pip install openap matplotlib pandas numpy
+```

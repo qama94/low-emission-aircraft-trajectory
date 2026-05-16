@@ -20,6 +20,18 @@ This project bridges both — applying Onorato's performance parameters within
 the OpenAP framework to assess mixed-fleet airspace capacity on a real European 
 corridor.
 
+## Research Gap
+
+Current aircraft performance models (e.g., OpenAP and WRAP) are primarily designed and validated for conventional kerosene-based aircraft. While these frameworks can simulate trajectories and fuel burn with high fidelity for existing fleets, they do not explicitly account for fundamentally different propulsion architectures such as hydrogen fuel cell or hybrid-electric systems.
+
+At the same time, existing studies on hydrogen aircraft (e.g., Onorato et al., 2022) focus primarily on aircraft design and performance metrics, without linking these changes to operational trajectory behaviour and air traffic management (ATM) system-level effects.
+
+This creates a gap between:
+- aircraft-level performance modelling, and
+- system-level ATM impact assessment under mixed-fleet conditions.
+
+This project addresses this gap by integrating alternative propulsion assumptions into a trajectory-based simulation framework and analysing resulting implications for airspace usage and emissions.
+
 ## Methodology
 
 Three modules:
@@ -54,6 +66,18 @@ The main contributions are:
 - Scenario-based analysis of mixed-fleet ATM impact on climb sector occupancy
 - Quantification of operational differences between conventional and zero-emission aircraft under realistic route conditions
 
+## Scientific Contribution
+
+This work extends existing trajectory simulation frameworks by introducing a modular approach for evaluating low- and zero-emission aircraft within operational ATM contexts.
+
+Key scientific contributions include:
+
+- Integration of hydrogen propulsion assumptions into a conventional trajectory generation pipeline
+- Coupling of trajectory dynamics with simplified emissions and energy consumption models
+- Scenario-based evaluation of mixed-fleet operations in a European short-haul corridor
+- Quantification of operational differences in climb performance and resulting ATM sector occupancy effects
+- Demonstration of a reproducible framework for future studies on emerging propulsion technologies
+
 ## Key results
 
 | Metric | Value |
@@ -64,6 +88,16 @@ The main contributions are:
 | Fuel reduction (hydrogen vs conventional) | −65.7% |
 | Extra sector occupancy at 50% penetration | 29.4 min/day |
 | Climb sector capacity impact at 100% penetration | +5.3% |
+
+## System-Level Interpretation
+
+The results indicate that even under simplified modelling assumptions, hydrogen fuel cell aircraft introduce measurable changes in climb phase duration and energy consumption profiles.
+
+While fuel consumption decreases significantly compared to conventional aircraft, the increased climb time observed in the hydrogen scenario leads to higher airspace occupancy during critical departure phases.
+
+From an ATM perspective, this suggests that environmental benefits at the aircraft level may introduce non-trivial operational trade-offs at the network level, particularly in high-density European airspace corridors.
+
+These findings highlight the importance of integrating aircraft performance evolution into future airspace capacity and traffic flow management studies.
 
 ## Figures
 

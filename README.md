@@ -99,6 +99,34 @@ From an ATM perspective, this suggests that environmental benefits at the aircra
 
 These findings highlight the importance of integrating aircraft performance evolution into future airspace capacity and traffic flow management studies.
 
+## Validation and Assumptions
+
+This model is a first-order operational simulation based on simplified performance assumptions.
+
+To ensure physical plausibility:
+- Fuel burn follows a quadratic velocity dependency (proxy model)
+- Hydrogen fuel scaling is based on literature-derived ratios (Onorato et al., 2022)
+- Climb profiles are assumed equivalent except for sensitivity adjustments
+
+The goal is not exact prediction, but comparative system-level behavior under consistent assumptions.
+
+## Sensitivity Analysis (Conceptual)
+
+The results are sensitive to:
+- fuel burn coefficient
+- climb rate penalty for hydrogen aircraft
+- assumed thrust-to-weight scaling
+
+A ±10–20% variation in these parameters changes absolute fuel values, but relative differences between hydrogen and conventional aircraft remain consistent in trend.
+
+## Research Insight
+
+The analysis suggests that while hydrogen propulsion significantly reduces fuel-related emissions, it may introduce operational changes in climb phase duration.
+
+From an air traffic management perspective, this indicates that environmental improvements at the aircraft level may not directly translate to reduced system-level complexity.
+
+Instead, mixed-fleet operations may require revised assumptions in airspace capacity planning, especially in high-density European corridors.
+
 ## Figures
 
 ![A320 conventional baseline trajectory](figures/01_baseline_trajectory.png)

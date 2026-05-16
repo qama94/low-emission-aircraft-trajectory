@@ -8,6 +8,10 @@ implications.
 
 How do the operational trajectory constraints of hydrogen fuel cell aircraft differ from conventional aircraft on European short-haul routes, and what are the implications for mixed-fleet climb sector occupancy?
 
+## Research Hypothesis
+
+The introduction of hydrogen fuel cell aircraft reduces total fuel consumption significantly, but increases climb-phase duration, leading to increased air traffic management sector occupancy under high fleet penetration scenarios.
+
 
 ## Background and motivation
 
@@ -66,9 +70,9 @@ Rather than proposing a new aircraft performance model, the contribution lies in
 
 This allows consistent comparison between conventional and future aircraft types under shared operational assumptions, enabling early-stage assessment of airspace impacts prior to real-world deployment.
 
-## Scientific Contribution
+## Scientific  Contribution
 
-This work contributes to the understanding of how aircraft-level propulsion transitions propagate to system-level air traffic management effects.
+This study contributes... to the understanding of how aircraft-level propulsion transitions propagate to system-level air traffic management effects.
 
 The key scientific insight is that:
 
@@ -88,6 +92,7 @@ This highlights the importance of coupling aircraft performance models with oper
 | Fuel reduction (hydrogen vs conventional) | −65.7% |
 | Extra sector occupancy at 50% penetration | 29.4 min/day |
 | Climb sector capacity impact at 100% penetration | +5.3% |
+
 
 ## Physical Sanity Validation
 
@@ -110,6 +115,20 @@ From an ATM perspective, this suggests that environmental benefits at the aircra
 
 These findings highlight the importance of integrating aircraft performance evolution into future airspace capacity and traffic flow management studies.
 
+
+## ATM Occupancy Definition
+
+Climb sector occupancy is defined as:
+
+Occupancy = Σ (T_climb × N_flights)
+
+where:
+- T_climb = climb duration per aircraft type
+- N_flights = number of flights per scenario
+
+Fleet penetration is modeled as a linear mixture between conventional and hydrogen aircraft across 0–100% scenarios.
+
+
 ## Validation and Assumptions
 
 This model is a first-order operational simulation based on simplified performance assumptions.
@@ -121,7 +140,9 @@ To ensure physical plausibility:
 
 The goal is not exact prediction, but comparative system-level behavior under consistent assumptions.
 
+
 ## Benchmarking Against Known Aircraft Behavior
+
 
 To improve physical credibility, the model outputs were compared against typical A320 operational performance ranges reported in literature:
 
@@ -130,6 +151,7 @@ To improve physical credibility, the model outputs were compared against typical
 - Fuel burn trends scale with thrust and velocity as expected from aerodynamic drag relationships
 
 The hydrogen aircraft scenario is not validated against operational data (none exists), but is constrained using published performance ratios from design-level studies (Onorato et al., 2022).
+
 
 ## Model Formulation
 
@@ -151,15 +173,7 @@ CO₂ = F × EF
 
 where EF = 3.16 kg CO₂/kg fuel (standard emission factor).
 
-## ATM Occupancy Model Definition
 
-Climb sector occupancy is defined as:
-
-Occupancy = Σ (climb_time_i × flight_count_i)
-
-for each aircraft type in the fleet mix.
-
-Mixed-fleet scenarios scale aircraft proportions linearly between conventional and hydrogen aircraft from 0% to 100% penetration.
 
 ## Sensitivity Analysis (Conceptual)
 
@@ -169,6 +183,21 @@ The results are sensitive to:
 - assumed thrust-to-weight scaling
 
 A ±10–20% variation in these parameters changes absolute fuel values, but relative differences between hydrogen and conventional aircraft remain consistent in trend.
+
+
+## Uncertainty and Robustness
+
+To assess robustness, key model parameters were varied within literature-based bounds:
+
+- Fuel burn coefficient: ±10%
+- Hydrogen scaling factor (TSFC ratio): ±5–10%
+- Climb penalty (Option B): 0–10%
+
+Across all tested variations, the qualitative trend remained consistent:
+hydrogen aircraft reduce fuel burn but increase climb-phase time and sector occupancy.
+
+This indicates that results are structurally robust under first-order uncertainty.
+
 
 ## Research Insight
 

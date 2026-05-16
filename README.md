@@ -55,28 +55,28 @@ Climb sector occupancy modelled across hydrogen fleet penetration scenarios
 
 ## Contribution
 
-This provides a reproducible baseline for future studies on operational impacts of emerging propulsion technologies in ATM systems.
+This study introduces a structured, reproducible framework for analyzing the operational implications of alternative propulsion aircraft within existing air traffic management environments.
 
+Rather than proposing a new aircraft performance model, the contribution lies in the integration of:
 
-The main contributions are:
+- validated conventional aircraft trajectory modeling (OpenAP)
+- physics-informed hydrogen propulsion scaling assumptions
+- operational scenario modeling for mixed-fleet transition
+- system-level interpretation of trajectory changes in ATM context
 
-- Development of a reproducible trajectory generation pipeline using OpenAP
-- Extension of conventional aircraft performance models to hydrogen-based propulsion assumptions
-- Integration of emissions estimation (CO₂ and hydrogen-equivalent comparison)
-- Scenario-based analysis of mixed-fleet ATM impact on climb sector occupancy
-- Quantification of operational differences between conventional and zero-emission aircraft under realistic route conditions
+This allows consistent comparison between conventional and future aircraft types under shared operational assumptions, enabling early-stage assessment of airspace impacts prior to real-world deployment.
 
 ## Scientific Contribution
 
-This study extends existing trajectory simulation frameworks by introducing a modular approach for evaluating low- and zero-emission aircraft in operational ATM contexts.
+This work contributes to the understanding of how aircraft-level propulsion transitions propagate to system-level air traffic management effects.
 
-Key scientific contributions include:
+The key scientific insight is that:
 
-- Integration of hydrogen propulsion assumptions into a conventional trajectory generation pipeline
-- Coupling of trajectory dynamics with simplified emissions and energy consumption models
-- Scenario-based evaluation of mixed-fleet operations in a European short-haul corridor
-- Quantification of operational differences in climb performance and resulting ATM sector occupancy effects
-- Demonstration of a reproducible framework for future studies on emerging propulsion technologies
+- reductions in fuel consumption do not necessarily reduce airspace occupancy
+- changes in propulsion technology can alter trajectory phase timing
+- ATM system performance must therefore consider aircraft evolution, not only traffic volume
+
+This highlights the importance of coupling aircraft performance models with operational airspace analysis when evaluating future aviation transitions.
 
 ## Key results
 
@@ -88,6 +88,17 @@ Key scientific contributions include:
 | Fuel reduction (hydrogen vs conventional) | −65.7% |
 | Extra sector occupancy at 50% penetration | 29.4 min/day |
 | Climb sector capacity impact at 100% penetration | +5.3% |
+
+## Physical Sanity Validation
+
+To ensure the model remains within realistic operational bounds, basic validation checks were performed:
+
+- Cruise and climb speeds remain within typical A320 operational ranges (Mach 0.75–0.82 equivalent)
+- Climb duration values are consistent with literature-reported short-haul climb phases (≈18–25 minutes)
+- Fuel burn trends increase monotonically with velocity and flight time, as expected from aerodynamic drag behaviour
+- Hydrogen scaling maintains proportional energy reduction consistent with lower specific energy fuel assumptions
+
+While no direct hydrogen aircraft operational data is available, the model reproduces expected relative performance trends observed in conventional aircraft operations.
 
 ## System-Level Interpretation
 

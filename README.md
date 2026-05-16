@@ -6,9 +6,8 @@ implications.
 
 ## Research question
 
-How do the operational trajectory constraints of hydrogen fuel cell aircraft 
-differ from conventional aircraft on European short-haul routes, and what are 
-the implications for mixed-fleet climb sector occupancy?
+How do the operational trajectory constraints of hydrogen fuel cell aircraft differ from conventional aircraft on European short-haul routes, and what are the implications for mixed-fleet climb sector occupancy?
+
 
 ## Background and motivation
 
@@ -26,7 +25,7 @@ Current aircraft performance models (e.g., OpenAP and WRAP) are primarily design
 
 At the same time, existing studies on hydrogen aircraft (e.g., Onorato et al., 2022) focus primarily on aircraft design and performance metrics, without linking these changes to operational trajectory behaviour and air traffic management (ATM) system-level effects.
 
-This creates a gap between:
+This reveals a gap between:
 - aircraft-level performance modelling, and
 - system-level ATM impact assessment under mixed-fleet conditions.
 
@@ -56,7 +55,8 @@ Climb sector occupancy modelled across hydrogen fleet penetration scenarios
 
 ## Contribution
 
-This project implements a modular trajectory simulation framework for evaluating the operational and environmental impact of introducing hydrogen fuel cell aircraft into European airspace.
+This provides a reproducible baseline for future studies on operational impacts of emerging propulsion technologies in ATM systems.
+
 
 The main contributions are:
 
@@ -68,7 +68,7 @@ The main contributions are:
 
 ## Scientific Contribution
 
-This work extends existing trajectory simulation frameworks by introducing a modular approach for evaluating low- and zero-emission aircraft within operational ATM contexts.
+This study extends existing trajectory simulation frameworks by introducing a modular approach for evaluating low- and zero-emission aircraft in operational ATM contexts.
 
 Key scientific contributions include:
 

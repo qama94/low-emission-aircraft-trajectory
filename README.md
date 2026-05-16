@@ -42,6 +42,18 @@ Two modelling assumptions compared:
 Climb sector occupancy modelled across hydrogen fleet penetration scenarios 
 (0–100%) on the Amsterdam–London corridor (50 daily flights).
 
+## Contribution
+
+This project implements a modular trajectory simulation framework for evaluating the operational and environmental impact of introducing hydrogen fuel cell aircraft into European airspace.
+
+The main contributions are:
+
+- Development of a reproducible trajectory generation pipeline using OpenAP
+- Extension of conventional aircraft performance models to hydrogen-based propulsion assumptions
+- Integration of emissions estimation (CO₂ and hydrogen-equivalent comparison)
+- Scenario-based analysis of mixed-fleet ATM impact on climb sector occupancy
+- Quantification of operational differences between conventional and zero-emission aircraft under realistic route conditions
+
 ## Key results
 
 | Metric | Value |

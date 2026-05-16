@@ -121,6 +121,46 @@ To ensure physical plausibility:
 
 The goal is not exact prediction, but comparative system-level behavior under consistent assumptions.
 
+## Benchmarking Against Known Aircraft Behavior
+
+To improve physical credibility, the model outputs were compared against typical A320 operational performance ranges reported in literature:
+
+- Cruise Mach range: 0.78–0.82 (model consistency checked)
+- Climb time (short-haul): 18–25 minutes (model output: 22.3 min)
+- Fuel burn trends scale with thrust and velocity as expected from aerodynamic drag relationships
+
+The hydrogen aircraft scenario is not validated against operational data (none exists), but is constrained using published performance ratios from design-level studies (Onorato et al., 2022).
+
+## Model Formulation
+
+Fuel burn is approximated as:
+
+F(t) ∝ v² · Δt
+
+where velocity represents aerodynamic drag contribution and Δt represents flight segment duration.
+
+Hydrogen fuel consumption is modeled using a scaling factor derived from specific energy differences:
+
+F_H2 = α · F_kerosene
+
+where α = 0.357 based on literature estimates (Onorato et al., 2022).
+
+CO₂ emissions are computed as:
+
+CO₂ = F × EF
+
+where EF = 3.16 kg CO₂/kg fuel (standard emission factor).
+
+## ATM Occupancy Model Definition
+
+Climb sector occupancy is defined as:
+
+Occupancy = Σ (climb_time_i × flight_count_i)
+
+for each aircraft type in the fleet mix.
+
+Mixed-fleet scenarios scale aircraft proportions linearly between conventional and hydrogen aircraft from 0% to 100% penetration.
+
 ## Sensitivity Analysis (Conceptual)
 
 The results are sensitive to:
